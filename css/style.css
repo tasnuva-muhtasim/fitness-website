@@ -338,7 +338,7 @@ text-align: left;
 }
 .container{
     justify-content: center;
-    align-items: center;
+    align-items: center; 
 }
  /* <!-- run starts here --> */
  header .logo h1 {
@@ -351,7 +351,61 @@ text-align: left;
     letter-spacing: 0%;
     text-align: center;
 }  
+/* <!-- Bmi starts here --> */
+#bmi{
+    background: rgb(34, 34, 34);
+}
+.bmi-container{
+   margin-left: 190px;
+   margin-right: 190px;
 
+    gap: 175px;
+}
+.bmi-des{
+    margin: 0 auto;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+.bmi-left table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.bmi-left th, .bmi-left td {
+    padding: .625rem;
+    border: .0625rem solid #444;
+    text-align: left;
+}
+.bmi-container{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    padding-top: 3rem;
+}
+form{
+    gap: 1rem;
+}
+form>input, select,option,form{
+    border-radius: 8px;
+background: rgba(255, 255, 255, 0.1);
+padding: .625rem;
+color: rgb(187, 187, 187);
+}
+.bmi-right button {
+    padding: 1rem 2.5rem 1rem 2.5rem;
+    width: 14rem;
+    line-height: 1.3rem;
+    font-size: 1rem;
+    border: none;
+}
+.bmi-right p{
+    text-align: left;
+}
+/* .bmi-des h1, .bmi-des p{
+    text-align: left;
+} */
+/* <!-- Bmi ends here --> */
 /* media starts here */
 
 @media screen and (max-width: 576px) {
@@ -464,5 +518,11 @@ text-align: left;
     .run-img>img{
         width: 100%;
         height: auto;
+    }
+    .bmi-container{
+        flex-direction: column;
+        margin-left: 0;
+   margin-right: 0;
+   gap:30px;
     }
 }
