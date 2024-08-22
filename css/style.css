@@ -501,22 +501,43 @@ text-align: left;
 }
 .logo-container{
     grid-area: logo;
+    margin-right: 30px;
+    margin-bottom: 4.5rem;
+    margin-left: 190px;
+}
+.logo-container h2,p{
+text-align: left;
+}
+.get,.started{
+    row-gap: 20px;
 }
 .get{
     grid-area: get;
 }
 .started{
     grid-area: started;
+    margin-right: 190px;
 }
 .hr{
     grid-area: hr;
 }
 .credit{
     grid-area: credit;
+    text-align: center;
+}
+.credit p{
+    text-align: center;
 }
 .footer-container{
     background: rgb(34, 34, 34);
     padding: 0;
+    display: grid;
+    padding: 40px;
+    grid-template-areas:
+    "logo get started"
+    "hr hr  hr"
+    "credit credit credit"
+    ;
 }
 /* footer ends here */
 /* media starts here */
